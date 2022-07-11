@@ -1,4 +1,350 @@
+
+.excerpt {
+    /* Sets the border */
+    border: 2px dashed #2196F3;
+  
+    /* Adds an inner padding */
+    padding: 15px;
+  
+    /* Sets outer margins */
+    margin: 20px;
+  }
+  
+  body {
+    font-family: sans-serif;
+    line-height: 1.5;
+  }
+
+  .box {
+    /* Control the overall width
+        and element height or only
+        the size of its content area */
+    width: 150px;
+    height: 150px;
+  
+    /* Sets the border */
+    border: 5px solid #f44336;
+  
+    /* Adds an inner padding */
+    padding: 30px;
+  
+    /* Sets outer margins */
+    margin: 80px;
+  
+    background-color: #ffeb3b;
+  }
+
+  .box {
+    box-sizing: border-box;
+    width: 150px;
+    height: 150px;
+    border: 5px solid #f44336;
+    padding: 30px;
+    margin: 100px;
+    background-color: #ffeb3b;
+  }
+
+  *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
+  font-family: sans-serif;
+  font-size: medium;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #8a0f0f;
+}
+
+.text {
+  /* Setting the margin between the border and the element's content */
+  padding: 40px;
+
+  background-color: rgb(106, 227, 238);
+  border: 5px dashed #2a2a2a;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .post {
+    /* Setting the margin between the border and the element's content */
+    padding: 20px;
+  
+    max-width: 400px;
     background-color: #fff;
-    color: #2a2a2a;
+    border: 2px dashed #2a2a2a;
+  }
+  
+  /* Set the bottom margin between the "thumb" and the title  */
+  .post-thumb {
+    margin-bottom: 30px;
+    border: 2px dotted tomato;
+  }
+  
+  /* Clearing the default top padding of the title
+      and set the bottom margin between the heading and paragraph */
+  .post-heading {
+    margin-top: 0;
+    margin-bottom: 20px;
+  
+    border: 2px solid teal;
+  }
+  
+  /* Clearing default paragraph indents from the browser */
+  .post-text {
+    margin-bottom: 0;
+    margin-top: 0;
+  
+    border: 2px dashed blue;
+  }
+
+  .box-1 {
+    width: 180px;
+    height: 80px;
+    background-color: #f44336;
+  
+    /*  The value can be pixels  */
+    border-radius: 10px;
+  }
+  
+  .box-2 {
+    width: 120px;
+    height: 120px;
+    background-color: #2196f3;
+  
+    /*  The value can be percent  */
+    border-radius: 20%;
+  }
+  
+  .box-3 {
+    width: 150px;
+    height: 150px;
+    background-color: #4caf50;
+  
+    /*  If the block is a square, settings the radius to 50% will transform it to a circle  */
+    border-radius: 50%;
+  }
+  
+  .box-1,
+  .box-2 {
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  
+  .box {
+    width: 280px;
+    height: 100px;
+  }
+  
+  .indigo {
+    background-color: #3f51b5;
+  }
+  
+  .green {
+    background-color: #4caf50;
+  }
+  
+  .amber {
+    background-color: #ffc107;
+  }
+
+  body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    background-color: #f9f9fd;
+  }
+  
+  .container {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0 15px;
+  
+    border: 2px dashed #2a2a2a;
+  }
+
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    line-height: 1.5;
+    background-color: #f9f9fd;
+  }
+  
+  h1,
+  h2,
+  p {
+    margin: 0;
+  }
+  
+  .container {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0 15px;
+    
+    outline: 2px dashed #f44336;
+  }
+  
+  .page-header,
+  .page-footer,
+  .hero,
+  .about,
+  .features {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .page-header {
+    background-color: #e0e0e0;
+  }
+  
+  .hero {
+    background-color: #4caf50;
+  }
+  
+  .about {
+    background-color: #ffc107;
+  }
+  
+  .features {
+    background-color: #2196f3;
+  }
+  
+  .page-footer {
+    background-color: #90a4ae;
+  }
+
+  *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  background-color: #f9f9fd;
+}
+
+.card {
+  max-width: 320px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #f44336;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.card-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-image.no-gap {
+  display: block;
+}
+
+.card-heading {
+  margin: 0;
+  padding: 20px;
+  font-weight: 500;
+  background-color: #03a9f4;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  background-color: #f9f9fd;
+}
+
+.text {
+  background-color: tomato;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-left: 10px solid #2196f3;
+  border-right: 10px solid #2196f3;
+
+  /* Let's give the inline <span> element the top
+      and bottom margins, and borders that don't work.   */
+  padding-top: 100px;
+  padding-bottom: 100px;
+  border-top: 10px solid #2196f3;
+  border-bottom: 10px solid #2196f3;
+}
+
+
+p {
+  border: 5px solid #212121;
+}
+
+.link {
+    display: inline-block;
+    padding: 16px 32px;
+  
+    border-radius: 3px;
+    background-color: teal;
+    color: white;
+  
+    font-family: sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .pane {
+    display: none;
+    padding: 8px;
+    border: 1px solid blue;
+    border-radius: 3px;
+  }
+  
+  .is-active {
+    display: block;
+  }
+
+  *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: #212121;
+  background-color: #f9f9fd;
+}
+
+.pane {
+  display: none;
+  padding: 8px;
+  border-radius: 3px;
+}
+
+.is-active {
+  display: block;
+}
+
+.controls {
+  display: flex;
+}
+
+.controls a {
+  padding: 4px 8px;
 }
